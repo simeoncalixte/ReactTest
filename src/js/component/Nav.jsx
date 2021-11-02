@@ -1,12 +1,14 @@
 /// Functional Component
 import React from "react";
 import navigationData from "../data/navigation.json";
-
+import { Context } from "../context/GlobalState.jsx";
 export const Nav = props => {
+	const vary = React.useContext(Context);
 	const [isLoading, setLoadingState] = React.useState(false);
 	const [authenticated, setAuthenticationState] = React.useState(false);
 	const [wasHovered, setHoveredElement] = React.useState(false);
 
+	console.log({ vary });
 	///render on every change + mount and unmount
 	const onMount = () => {
 		console.log("onMount");

@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "./Main.jsx";
 import Nav from "./Nav.jsx";
-
+import withContext from "../context/GlobalState.jsx";
 //create your first component
 const Home = () => {
 	const [isOpen, toggleState] = React.useState(true);
@@ -18,4 +18,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default withContext(Home);
