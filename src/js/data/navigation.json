@@ -1,0 +1,27 @@
+[
+    {
+        "label": "Home",
+        "href": "#",
+        "active": true
+    },
+    {
+        "label": "Products",
+        "href": "#",
+        "active": false
+    },
+    {
+        "label": "About",
+        "href": "#",
+        "active": false
+    },
+    {
+        "label": "Test1",
+        "href": "",
+        "active": false
+    },
+    {
+        "label": "Test2",
+        "href": "",
+        "active": false
+    }
+]
