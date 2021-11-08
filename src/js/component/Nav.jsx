@@ -1,7 +1,7 @@
 /// Functional Component
 import React from "react";
 import navigationData from "../data/navigation.json";
-import { Context } from "../context/GlobalState.jsx";
+import Context from "../context/GlobalState.jsx";
 export const Nav = props => {
 	const vary = React.useContext(Context);
 	const [isLoading, setLoadingState] = React.useState(false);

@@ -1,17 +1,13 @@
 import React from "react";
 
-const initialValue = {
-	loading: false,
-	setLoading: () => {
-		this.loading = true;
+const defaultValue = {
+	auth: {
+		userName: null,
+		jst: "kdfjakjfoiq34u2foasdfa",
+		firstName: ""
 	}
 };
-export const Context = React.createContext(initialValue);
 
-function withContext(Component) {
-	return function withContextFunction(props) {
-		return <Component />;
-	};
-}
+const Context = React.createContext(defaultValue);
 
-export default withContext;
+export default Context;
