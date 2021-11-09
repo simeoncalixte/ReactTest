@@ -1,15 +1,16 @@
 import React from "react";
 import Main from "./Search.jsx";
 import Nav from "./Nav.jsx";
-import Context from "../context/GlobalState.jsx";
+import withGlobalState, { Context } from "../context/GlobalState.jsx";
 //create your first component
 const Home = () => {
-	debugger;
 	const globalState = React.useContext(Context);
 	const [isOpen, toggleState] = React.useState(true);
+	debugger;
 
 	const closeFunction = () => {
-		toggleState(!isOpen);
+		// toggleState(!isOpen);
+		globalState.updateState();
 	};
 
 	return (
